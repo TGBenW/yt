@@ -53,6 +53,7 @@ body {
   padding-right: 17px;
   max-width: 830px;
   width: 50%;
+  
 }
 .input-search {
   background-color: transparent;
@@ -256,6 +257,9 @@ body {
   height: 150px;
   object-fit: cover;
 }
+/* .swiper-slide{
+  margin-right: 40px;
+} */
 /* row 2 - Recommended */
 .video-card-recommended {
   width: 540px;
@@ -332,9 +336,37 @@ body {
 .channel-button {
   cursor: pointer;
 }
-.channel-button-prev{
 
+/* row 3 - Food & Drink */
+.channel-text-description {
+  display: flex;
+  align-items: end;
 }
-.channel-button-next{
-
+.channel-text-additional {
+  font-size: 16px;
+  line-height: 20px;
+  color: #C2C2C2;
+  margin-left: 20px;
+  padding-bottom: 3px;
+}
+.channel-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe-button {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-right: 255px;
+}
+.subscribe-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FF0000;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
