@@ -81,10 +81,20 @@ const swiper_food_drink = new Swiper('.channel-slider-food-drink', {
 const searchBtn = document.querySelector('.mobile-search');
 const mobileSearch = document.querySelector('.input-group');
 const ytLogo = document.querySelector('.logo');
+const innerSearchLogo = document.querySelector('.icon-search');
+
 searchBtn.addEventListener('click', () => {
-  mobileSearch.classList.toggle('is-open');
-  ytLogo.classList.toggle('hide');
+  mobileSearch.classList.add('is-open');
+  ytLogo.classList.add('hide');
+  searchBtn.classList.add('hide');
 });
+innerSearchLogo.addEventListener('click', () => {
+  mobileSearch.classList.remove('is-open');
+  ytLogo.classList.remove('hide');
+  searchBtn.classList.remove('hide');
+});
+
+
 
 if (document.documentElement.scrollWidth <= 640) {
   swiper.destroy();
