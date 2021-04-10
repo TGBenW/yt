@@ -80,8 +80,10 @@ const swiper_food_drink = new Swiper('.channel-slider-food-drink', {
 
 const searchBtn = document.querySelector('.mobile-search');
 const mobileSearch = document.querySelector('.input-group');
+const ytLogo = document.querySelector('.logo');
 searchBtn.addEventListener('click', () => {
   mobileSearch.classList.toggle('is-open');
+  ytLogo.classList.toggle('hide');
 });
 
 if (document.documentElement.scrollWidth <= 640) {

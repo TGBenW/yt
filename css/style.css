@@ -124,7 +124,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: 45px;
+  margin-left: 24px;
 }
 
 /* sidebar */
@@ -277,6 +277,11 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 33px;
+}
+.bottom-space {
+  margin-bottom: 30px;
+}
+.channel-description {
   margin-bottom: 30px;
 }
 
@@ -408,9 +413,8 @@ body {
 .subscribe-button {
   background-color: #fff;
   border: none;
-  margin-bottom: 30px;
   cursor: pointer;
-  margin-right: 255px;
+  padding-right: 100px;
 }
 
 .subscribe-text {
@@ -431,24 +435,36 @@ body {
   display: none;
 }
 
+@media (max-width: 1080px) {
+  .channel-text-additional {
+    display: none;
+  }
+}
+
 @media (max-width: 860px) {
   .icons {
     display: none;
   }
-
   .user {
     margin-left: auto;
+  }
+  .subscribe {
+    display: none;
   }
 }
 
 @media (max-width: 640px) {
+  .subscribe {
+    display: flex;
+  }
   .subscribe-button {
-    background-color: #fff;
-    border: none;
-    margin-bottom: 30px;
-    margin-right: 0px;
+    padding-right: 16px;
   }
 
+  .content {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
   .channel-text-additional {
     display: none;
   }
@@ -493,8 +509,17 @@ body {
     top: 20px;
   }
 
+  .hide {
+    opacity: 0;
+  }
+
   .user {
-    margin-left: 20px;
+    margin-left: 24px;
+    /* margin-right: -50px; */
+  }
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .menu-button {
@@ -505,9 +530,6 @@ body {
     display: none;
   }
 
-  .content {
-    padding-left: 32px;
-  }
 
   .mobile-sidebar {
     display: block;
@@ -545,14 +567,8 @@ body {
   }
 }
 
-@media (max-width: 516px) {
+@media (max-width: 450px) {
   .subscribe {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .video-channel {
     display: none;
   }
 }
