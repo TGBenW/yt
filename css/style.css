@@ -443,21 +443,14 @@ body {
 
 }
 
+
 @media (max-width: 640px) {
+
   .swiper-wrapper {
     display: flex;
     overflow-y: auto;
     flex-direction: column;
   }
-}
-
-@media (max-width: 640px) {
-
-  /* .swiper-wrapper {
-    display: flex;
-    overflow-y: auto;
-    flex-direction: column;
-  } */
   .slider-buttons {
     display: none;
   }
