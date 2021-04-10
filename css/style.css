@@ -572,3 +572,7 @@ body {
     display: none;
   }
 }
+
+.video-card:last-child {
+  margin-bottom: 60px;
+}
