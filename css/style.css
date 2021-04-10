@@ -431,7 +431,6 @@ body {
   display: none;
 }
 
-
 @media (max-width: 860px) {
   .icons {
     display: none;
@@ -443,45 +442,33 @@ body {
 
 }
 
-
 @media (max-width: 640px) {
-<<<<<<< Updated upstream
-
-  .swiper-wrapper {
-    display: flex;
-    overflow-y: auto;
-    flex-direction: column;
-=======
-<<<<<<< HEAD
   .subscribe-button {
     background-color: #fff;
     border: none;
     margin-bottom: 30px;
     margin-right: 0px;
   }
+
   .channel-text-additional {
     display: none;
   }
+
   .swiper-wrapper {
     display: flex;
     flex-direction: column;
   }
+
   .video-card,
   .video-card-recommended {
     margin-bottom: 30px;
   }
+
   .video-thumb,
   .video-thumb-recommended {
     height: 300px;
-=======
-
-  .swiper-wrapper {
-    display: flex;
-    overflow-y: auto;
-    flex-direction: column;
->>>>>>> cdffdb90b98209d4c7c7ac1b9d56a26462a71d4e
->>>>>>> Stashed changes
   }
+
   .slider-buttons {
     display: none;
   }
