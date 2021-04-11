@@ -83,6 +83,10 @@ const mobileSearch = document.querySelector('.input-group');
 const ytLogo = document.querySelector('.logo');
 const innerSearchLogo = document.querySelector('.icon-search');
 
+const wrapRow1 = document.querySelector('.wrap-row1');
+const wrapRow2 = document.querySelector('.wrap-row2');
+const wrapRow3 = document.querySelector('.wrap-row3');
+
 searchBtn.addEventListener('click', () => {
   mobileSearch.classList.add('is-open');
   ytLogo.classList.add('hide');
@@ -94,10 +98,22 @@ innerSearchLogo.addEventListener('click', () => {
   searchBtn.classList.remove('hide');
 });
 
-
-
-if (document.documentElement.scrollWidth <= 640) {
+/* if (document.documentElement.scrollWidth <= 640) {
   swiper.destroy();
   swiper_recommended.destroy();
   swiper_food_drink.destroy();
-}
+}; */
+
+////////////////////////////////////////////////////////////////////////
+
+window.onresize = function () {
+  if (document.documentElement.scrollWidth <= 640) {
+    wrapRow1.classList.remove('swiper-wrapper');
+    wrapRow2.classList.remove('swiper-wrapper');
+    wrapRow3.classList.remove('swiper-wrapper');
+  } else {
+    wrapRow1.classList.add('swiper-wrapper');
+    wrapRow2.classList.add('swiper-wrapper');
+    wrapRow3.classList.add('swiper-wrapper');
+  }
+};
