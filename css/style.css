@@ -475,12 +475,9 @@ body {
     display: none;
   }
 
-  .wrap-row1,
-  .wrap-row2,
-  .wrap-row3 {
+  .swiper-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: calc(105%);
   }
 
   .video-card,
